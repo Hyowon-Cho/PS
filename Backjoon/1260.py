@@ -19,8 +19,8 @@ for i in range(len(graph)):
 def dfs(start):
     print(start, end=' ')
     visited[start]=True # The starting point should be True
-    for i in graph[start]: # Since starting point, we start to search insdie the graph.
-        if not visited[i]: # For every section that we didn't visit, we use recursion(dfs) .
+    for i in graph[start]: # Since the starting point, we start to search inside the graph.
+        if not visited[i]: # For every section that we didn't visit, we use recursion(dfs).
             dfs(i)
             visited[i]=True # Now we set as True.
 
